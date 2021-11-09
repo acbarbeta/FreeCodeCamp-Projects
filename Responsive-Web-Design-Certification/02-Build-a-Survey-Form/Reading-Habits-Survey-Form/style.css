@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+/*General design */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    max-width: 100%;
+    margin: 0;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+
+/* For mobile users: */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #333D29;
+    background-image: linear-gradient(
+        115deg,
+        rgba(101,109,94,0.8),
+        rgba(65, 72, 51, 0.7)),
+    
+        url(https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.container {
+    width: 100%;
+    margin: 4rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 0.5 0.5 1rem;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-weight: 200;
+}
+
+.more-info {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    color: #C2C5AA;
+}
+
+
+
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Form design */
+form {
+    background: #333D29;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+}
+
+.form {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.3rem;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.4rem 0.7rem;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ffffe6;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio,
+.checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.text-area {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 0.5rem;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #656D4A;
+    color: inherit;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #C2C5AA;
+    opacity: 0.5;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #B6AD90;
+    font-weight: 600;
+    font-size: 1rem;
+}
+  
+  footer a:hover {
+   color: #A68A64;
+   opacity: 0.7;
+}
+
+

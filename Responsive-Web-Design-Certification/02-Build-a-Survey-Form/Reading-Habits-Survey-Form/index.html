@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Reading Habits Survey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href=style.css>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header class="header">
+                <h1 id="title">Reading Habits Survey Form</h1>
+                <p id="description">Welcome! Please, enter your information below:</p>
+            </header>
+
+            <form id="survey-form">
+                <div class="form">
+                    <label id="name-label" for="name">Name: </label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Please, enter your name" required>
+                </div>
+
+                <div class="form">
+                    <label id="email-label" for="email">e-mail: </label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="example@books.com" required>
+                </div>
+
+                <div class="form">
+                    <label id="number-label" for="number">Age: </label>
+                    <input type="number" id="number" min="10" max="99" name="number" class="form-control" placeholder="Please, enter your age" required>
+                </div>
+
+                <div class="form">
+                    <p>Do you consider yourself as an avid rader?</p>
+                    <label>
+                        <input name="avid-reader" value="absolutely" type="radio" class="input-radio" checked>Absolutely
+                    </label>
+                    <label>
+                        <input name="avid-reader" value="maybe" type="radio" class="input-radio">Maybe
+                    </label>
+                    <label>
+                        <input name="avid-reader" value="not-sure" type="radio" class="input-radio">Not sure
+                    </label>
+                    <label>
+                        <input name="avid-reader" value="definitely-not" type="radio" class="input-radio">Definitely not!
+                    </label>
+                </div>
+
+                <div class="form">
+                    <p>On average, how many books do you read a year?</p>
+                    <select id="dropdown" name="books-quantity" class="form-control" required>
+                        <option disabled selected value>Select your answer</option>
+                        <option value="none">None</option>
+                        <option value="1-3">1-3</option>
+                        <option value="4-10">4-10</option>
+                        <option value="11-15">11-15</option>
+                        <option value="16-20">16-20</option>
+                        <option value="more-21">21 or more</option>
+                    </select> 
+                </div>
+
+                <div class="form">
+                    <p>
+                        From those below, which ones are your favorite book genres?
+                        <span class="more-info">(Check all that apply)</span>
+                    </p>
+                    
+                    <label>
+                        <input name="genres" value="thriller" type="checkbox" class="checkbox">Thriller
+                    </label>
+                    <label>
+                        <input name="genres" value="adventure" type="checkbox" class="checkbox">Adventure
+                    </label>
+                    <label>
+                        <input name="genres" value="thriller" type="checkbox" class="checkbox">Romance
+                    </label>
+                    <label>
+                        <input name="genres" value="comic-books" type="checkbox" class="checkbox">Comic Books
+                    </label>
+                    <label>
+                        <input name="genres" value="fantasy" type="checkbox" class="checkbox">Fantasy
+                    </label>
+                    <label>
+                        <input name="genres" value="sci-fi" type="checkbox" class="checkbox">Sci-fi
+                    </label>
+                    <label>
+                        <input name="genres" value="biography" type="checkbox" class="checkbox">Biography
+                    </label>
+                    <label>
+                        <input name="genres" value="poetry" type="checkbox" class="checkbox">Poetry
+                    </label>
+                    <label>
+                        <input name="genres" value="other" type="checkbox" class="checkbox">Other
+                    </label>
+                    <label>
+                        <input name="genres" value="dont-like" type="checkbox" class="checkbox">None (I don't like reading)
+                    </label>
+                </div>
+
+                <div class="form">
+                    <p>Any other comments? Feel free to tell us!</p>
+                    <textarea id="comments" class="text-area" name="comment" placeholder="Write here"></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit" id="submit" class="submit-button">Submit!</button>
+                </div>
+            </form>
+        </div>
+
+        <div></div>
+        <footer clas="footer">
+            <p> This page was created by Ana Clara Barbeta to accomplish her <a href="http://freecodecamp.org" target="blank"> FreeCodeCamp </a> challenge. </p>
+        </footer>
+    </body>
+</html>
